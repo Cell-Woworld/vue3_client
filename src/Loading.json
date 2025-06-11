@@ -1,0 +1,24 @@
+{
+	"background": {
+		"src": "assets/img/splash.jpg",
+		"style": "background-size:contain;background-position:center;margin:auto;background-repeat-x:no-repeat;"
+	},
+	"layout": [
+		{
+			"id": "loading-wrapper",
+			"component": "Container",
+			"subcomponent": "div",
+			"items": [
+				{
+					"id": "loading-text",
+					"component": "div",
+					"content": "LOADING"
+				},
+				{
+					"id": "loading-content",
+					"component": "div"
+				}
+			]
+		}
+	]
+}

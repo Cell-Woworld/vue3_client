@@ -1,0 +1,1 @@
+"c:\Program Files\7-Zip\7z.exe" a cordova_app.7z cordova_app\* -r -x!.data -x!android

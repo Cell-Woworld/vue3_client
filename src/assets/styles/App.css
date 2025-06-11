@@ -1,0 +1,143 @@
+#loading-wrapper {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+#loading-text {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: rgb(20, 121, 60);
+	width: 100px;
+	height: 30px;
+	margin: -7px 0 0 -45px;
+	text-align: center;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 20px;
+}
+
+#loading-content {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 170px;
+	height: 170px;
+	margin: -85px 0 0 -85px;
+	border: 3px solid #F00;
+}
+
+#loading-content {
+	border: 3px solid transparent;
+	border-top-color: rgb(121, 61, 185);
+	border-bottom-color: rgb(121, 61, 185);
+	border-radius: 50%;
+	-webkit-animation: loader 2s linear infinite;
+	-moz-animation: loader 2s linear infinite;
+	-o-animation: loader 2s linear infinite;
+	animation: loader 2s linear infinite;
+}
+
+@keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.list-menu-title{
+	font-size: 30px  !important;
+	justify-content: center;
+	padding: 20px 0px 50px 0px;
+}
+
+.list-menu{
+	font-size: 24px  !important;
+	text-align: left;
+	margin: 15px 0px;
+}
+
+.list-submenu{
+	font-size: 20px !important;
+	text-align: left;
+}
+
+.list-content{
+	font-size: 16px !important;
+	text-align: left;
+}
+
+.cardlist-menu{
+	font-size: 16px !important;
+	text-align: left;
+	padding-top: 4px;
+}
+
+.btn-right-align
+{
+	float: right;
+	margin:20px;
+}
+
+.btn-left-align
+{
+	float: left;
+	margin:20px;
+}
+
+.btn-home
+{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.container
+{
+	padding:0px;
+}
+
+div {
+    white-space: pre-wrap;
+}
+
+.chat-bubble {
+	--r: 20px; /* the radius */
+	--t: 15px; /* the size of the tail */
+	
+	max-width: 300px;
+	/* padding: calc(2*var(--r)/3); */
+	-webkit-mask: 
+	  radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+		var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+	  conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+		calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+	  radial-gradient(at 50% 50%,#000 98%,#0000 101%) 
+		0 0/var(--r) var(--r) space padding-box;
+  }
+  
+  .chat-left {
+	--_d: 0%;
+	border-left: var(--t) solid #0000;
+	margin-right: var(--t);
+	place-self: start;
+	float: left;
+  }
+  
+  .chat-right {
+	--_d: 100%;
+	border-right: var(--t) solid #0000;
+	margin-left: var(--t);
+	place-self: end;
+	float: right;
+  }
